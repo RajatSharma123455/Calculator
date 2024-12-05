@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body class="full">
+  <div class="calculator"> 
+    
+    <p id="display"></p>
+
+    <p  id="box1" >
+      <button onclick="clearCalculation();
+       "
+            
+          class="col1">Clr</button>
+      <br>
+      <button onclick="
+       calculation += ' / ';
+          console.log(calculation);
+          displayValue();
+          "class="col1">/</button>
+      <br>
+      <button onclick="
+       calculation += ' * ';
+          console.log(calculation);
+          displayValue();
+          "class="col1">*</button>
+
+      <button onclick="evaluateCalculation();
+       displayValue();"
+        class="col1">=</button>
+
+    </p>
+     
+
+    <p id="box2">
+      <button onclick="
+          calculation += '1';
+          console.log(calculation);
+          displayValue();
+          "class="col2">1</button>
+
+      <button  onclick="
+          calculation += '2';
+          console.log(calculation);
+          displayValue();
+          "class="col2">2</button>
+
+      <button onclick="
+          calculation += '3';
+           console.log(calculation);
+           displayValue();
+          "class="col2">3</button>
+
+      <button onclick="
+       calculation += ' - ';
+          console.log(calculation); 
+          displayValue();
+          "class="col2" id="minus">-</button>
+    </p>
+    
+    <p id="box3">
+      <button  onclick="
+       calculation += '4';
+          console.log(calculation);
+          displayValue();"
+          
+          class="col3">4</button>
+
+      <button  onclick=" 
+         calculation += '5';
+          console.log(calculation);
+          displayValue();
+          "class="col3">5</button>
+
+      <button  onclick=" 
+          calculation += '6';
+          console.log(calculation);
+          displayValue();
+          "class="col3">6</button>
+
+      <button onclick=" 
+         calculation += ' + ';
+          console.log(calculation);
+          displayValue();
+          "class="col3" id="add">+</button>
+    </p>
+
+    <p id="box4">
+      <button onclick="
+       calculation += '7';
+          console.log(calculation);
+          displayValue();
+          "class="col4">7</button>
+
+      <button onclick="
+       calculation += '8';
+          console.log(calculation);
+          displayValue();
+          "class="col4">8</button>
+
+      <button onclick="
+       calculation += '9';
+          console.log(calculation);
+          displayValue();
+          "class="col4">9</button>
+
+      <button onclick="
+      calculation=eval(calculation);
+      displayValue();
+      console.log(calculation);
+      " class="col4" id="equal">=</button>
+
+    </p>
+
+  </div>
+  
+</body>
+</html>
